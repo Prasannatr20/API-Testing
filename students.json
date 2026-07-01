@@ -1,0 +1,75 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John",
+      "location": "india",
+      "phone": 1234567890,
+      "courses": [
+        "Java",
+        "Selenium"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Kim",
+      "location": "US",
+      "phone": 9876543210,
+      "courses": [
+        "Python",
+        "Appium"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Smith",
+      "location": "Canada",
+      "phone": 3499282726,
+      "courses": [
+        "C#",
+        "RestAPI"
+      ]
+    },
+    {
+      "id": "lLiJCA_t8k8",
+      "name": "Rose",
+      "location": "US",
+      "phone": 98765,
+      "courses": [
+        "JS",
+        "TS"
+      ]
+    },
+    {
+      "id": "9tZbVO-zCk8",
+      "name": "Rose",
+      "location": "US",
+      "phone": 98765,
+      "courses": [
+        "JS",
+        "TS"
+      ]
+    },
+    {
+      "name": "Rose",
+      "location": "US",
+      "phone": 98765,
+      "courses": [
+        "JS",
+        "TS"
+      ],
+      "id": "cSv3BNRawR0"
+    },
+    {
+      "name": "Rose",
+      "location": "US",
+      "phone": 98765,
+      "courses": [
+        "JS",
+        "TS"
+      ],
+      "id": "_CsjBoSo9co"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

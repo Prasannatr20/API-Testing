@@ -1,0 +1,196 @@
+{
+  "Employees": [
+    {
+      "name": "Prasanna",
+      "number": 9012343265,
+      "type": "WFO",
+      "role": "SDET",
+      "skills": [
+        "Java",
+        "SQL",
+        "Selenium",
+        "API Testing",
+        "API Automation"
+      ],
+      "id": "L5lWf75H-xA"
+    },
+    {
+      "name": "John",
+      "number": 9012343264,
+      "type": "WFO",
+      "role": "Dev",
+      "skills": [
+        "Java",
+        "SQL",
+        "Spring",
+        "API",
+        "NodeJS"
+      ],
+      "id": "66XwAIxXx0s"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "JyS6mCvTkjw"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "azebR3SFO9o"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "W6NFcNu7WQ8"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "tCq9JSsQhwo"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "KTbo3CM0Otk"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "txHyWNtNJIQ"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "u0MeAjCkc84"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "F39W1Dm8fO0"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "e24Kc9YeTz4"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "KJXGobbrqkc"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "E2QMV7EA-xE"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "MMUk6sQ6B5k"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "6_SC7fpXjXo"
+    },
+    {
+      "name": "Tom",
+      "number": 9454321567,
+      "role": "support",
+      "type": "Hybrid",
+      "skills": [
+        "Communication skills",
+        "Jira"
+      ],
+      "id": "IYyne0mo6rg"
+    },
+    {
+      "id": "kVX9wL7S0wI"
+    },
+    {
+      "id": "sLU082r5k6I"
+    },
+    {
+      "id": "rcqftHmfl-Y"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

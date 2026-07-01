@@ -1,0 +1,38 @@
+[
+ {
+   "bookId": 1,
+   "custName": "Prasanna"
+ },
+ {
+   "bookId": 1,
+   "custName": "John"
+ },
+ {
+   "bookId": 3,
+   "custName": "Raghu"
+ },
+ {
+   "bookId": 5,
+   "custName": "Anbu"
+ },
+ {
+   "bookId": 4,
+   "custName": "Guna"
+ },
+ {
+   "bookId": 6,
+   "custName": "Velu"
+ },
+ {
+   "bookId": 3,
+   "custName": "Chandra"
+ },
+ {
+   "bookId": 5,
+   "custName": "Palani"
+ },
+ {
+   "bookId": 6,
+   "custName": "Senthil"
+ }
+]
