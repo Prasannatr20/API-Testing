@@ -1,0 +1,74 @@
+{
+  "info": {
+    "_postman_id": "c5f5e19a-8bc6-4033-9f27-5c686dc5b24f",
+    "name": "File Upload",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55884801",
+    "_collection_link": "https://go.postman.co/collection/55884801-c5f5e19a-8bc6-4033-9f27-5c686dc5b24f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "SingleFileUpload",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "4ee869d1-a6cf-4359-b2ca-a692759a231b",
+              "src": "postman-cloud:///1f176279-fa09-4760-998e-00b0f1d26560"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/uploadFile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "uploadFile"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Multiple File Uploads",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "files",
+              "type": "file",
+              "uuid": "4ee869d1-a6cf-4359-b2ca-a692759a231b",
+              "src": [
+                "/C:/Users/prasa/OneDrive/Desktop/AutomationPractise/This is to upload on API.txt",
+                "/C:/Users/prasa/OneDrive/Desktop/AutomationPractise/This file is to upload on API.txt"
+              ]
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/uploadMultipleFiles",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "uploadMultipleFiles"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
