@@ -119,6 +119,52 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "API Key Auth",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "value",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://api.openweathermap.org/geo/1.0/direct?q=New York, NY, US&limit=5&appid=c6198efd4e177af55af4b0847af6c113",
+          "protocol": "http",
+          "host": [
+            "api",
+            "openweathermap",
+            "org"
+          ],
+          "path": [
+            "geo",
+            "1.0",
+            "direct"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "New York, NY, US"
+            },
+            {
+              "key": "limit",
+              "value": "5"
+            },
+            {
+              "key": "appid",
+              "value": "c6198efd4e177af55af4b0847af6c113"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
