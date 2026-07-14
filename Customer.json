@@ -1,0 +1,38 @@
+{
+  "orderId": "ORD_789",
+  "customer": {
+    "name": "Meena",
+    "contact": {
+      "email": "meena@example.com",
+      "phone": "9876543210"
+    }
+  },
+  "products": [
+    {
+      "productName": "Laptop",
+      "price": 55000,
+      "inStock": true
+    },
+    {
+      "productName": "Mouse",
+      "price": 500,
+      "inStock": false
+    }
+  ],
+  "paymentStatus": null,
+  "shippingAddress": {
+    "city": "Coimbatore",
+    "pincode": "641001"
+  }
+}
+
+
+Paths:
+
+"meena@example.com"--> customer.contact.email
+9876543210 --> customer.contact.phone
+"Laptop"-->products[0].productName
+500 (price of Mouse)-->products[1].price
+false (inStock of Mouse)--> products[1].inStock
+"Coimbatore"-->shippingAddress.city
+null (paymentStatus)--> paymentStatus
