@@ -1,0 +1,21 @@
+{
+  "employeeId": 2024,
+  "name": "Arun Kumar",
+  "department": "Quality Assurance",
+  "isFullTime": true,
+  "salary": 35000.50,
+  "skills": ["Manual Testing", "Selenium", "Postman"],
+  "manager": {
+    "name": "Divya Rao",
+    "empId": 1050
+  },
+  "projects": [
+    { "projectName": "Banking App", "status": "Ongoing" },
+    { "projectName": "E-commerce Site", "status": "Completed" }
+  ]
+}
+
+Path to "Manual Testing" -> skills[0]
+Path to 1050 (manager's empId) -> manager.empId
+Path to "Ongoing" (status of the first project) ->projects[0].status
+Path to "Banking App" -> projects[0].projectName
