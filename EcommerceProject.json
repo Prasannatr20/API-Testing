@@ -1,0 +1,252 @@
+{
+  "info": {
+    "_postman_id": "205c7ec8-2c0b-460d-960f-a1d3aed7d5f9",
+    "name": "E Commerce Project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55884801",
+    "_collection_link": "https://go.postman.co/collection/55884801-205c7ec8-2c0b-460d-960f-a1d3aed7d5f9?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Login API",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function()\r",
+              "{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Response time is less than 500ms\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+              "});\r",
+              "pm.test(\"Headers include Content-Type\", function()\r",
+              "{\r",
+              "    pm.response.to.have.header(\"content-type\");\r",
+              "});\r",
+              "pm.test(\"Content-Type has application/json\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.headers.get(\"content-type\")).to.include(\"application/json\");\r",
+              "});\r",
+              "var jsonData = pm.response.json();\r",
+              "pm.environment.set(\"accessToken\", jsonData.accessToken);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"emilys\",\r\n    \"password\": \"emilyspass\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/auth/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get user profile",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function()\r",
+              "{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Response time less than 500ms\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+              "});\r",
+              "pm.test(\"Header to have content-type\", function()\r",
+              "{\r",
+              "    pm.response.to.have.header(\"content-type\");\r",
+              "});\r",
+              "pm.test(\"Content-Type to have application/json\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.headers.get(\"content-type\")).to.include(\"application/json\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{accessToken}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{baseUrl}}/auth/me",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "auth",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get products",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function()\r",
+              "{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Response time is less than 500ms\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+              "});\r",
+              "pm.test(\"Header has content-type\", function()\r",
+              "{\r",
+              "    pm.response.to.have.header(\"content-type\");\r",
+              "});\r",
+              "pm.test(\"content-type header has application/json\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.headers.get(\"content-type\")).to.include(\"application/json\");\r",
+              "});\r",
+              "var jsonData= pm.response.json();\r",
+              "pm.test(\"Product exists\", function()\r",
+              "{\r",
+              "    pm.expect(jsonData.products.length).to.be.above(0);\r",
+              "});\r",
+              "pm.test(\"Product title is correct\", function()\r",
+              "{\r",
+              "    pm.expect(jsonData.products[0].title).to.eql(\"Essence Mascara Lash Princess\");\r",
+              "});\r",
+              "pm.test(\"Product price is a number\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.json().products[0].price).to.be.a(\"number\");\r",
+              "});\r",
+              "pm.environment.set(\"productId\", jsonData.products[0].id);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "{{baseUrl}}/products",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get product",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function()\r",
+              "{\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "pm.test(\"Response time is less than 500ms\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+              "});\r",
+              "pm.test(\"Header has content-type\", function()\r",
+              "{\r",
+              "    pm.response.to.have.header(\"content-type\");\r",
+              "});\r",
+              "pm.test(\"content-type header has application/json\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.headers.get(\"content-type\")).to.include(\"application/json\");\r",
+              "});\r",
+              "var jsonData= pm.response.json();\r",
+              "pm.test(\"Product title is correct\", function()\r",
+              "{\r",
+              "    pm.expect(jsonData.title).to.eql(\"Essence Mascara Lash Princess\");\r",
+              "});\r",
+              "pm.test(\"Product price is a number\", function()\r",
+              "{\r",
+              "    pm.expect(pm.response.json().price).to.be.a(\"number\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/product/{{productId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "product",
+            "{{productId}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
